@@ -6,46 +6,116 @@
     <title>Changelog</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap">
     <style>
-        /* Set the background color to RGB: 87, 250, 177 */
-        body {
-            background-color: rgb(87, 250, 177); /* Electric Green */
-        }
-
-        /* Style for the changelog title */
-        .changelog-title {
-            text-align: center;
+              body {
             font-family: 'Rubik Mono One', sans-serif;
-            font-size: 36px;
+            background-color: rgb(87, 250, 177);
+            text-align: center;
+        }
+
+        .kwiklinks-title {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+         .search-container {
+            margin: 20px auto;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: blue; /* Set the background color to green */
+            border: none;
+            color: blue;
+            border-radius: 10px; /* Add rounded corners */
+            font-weight: bold; /* Add bold font-weight */
+        }
+
+        .button-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .button {
+            padding: 15px 20px;
+            background-color: blue; /* Change to blue */
+            color: white; /* Set text color to white */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Rubik Mono One', sans-serif; /* Add font-family */
+             width: 16%;
+            margin: 1%; /* Increase margin for spacing */
+            display: inline-block;
+            font-size: 18px; /* Increase font size */
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        .no-result-message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+     
+      .section-header {
+            font-size: 24px;
             font-weight: bold;
             margin-top: 20px;
-            color: black; /* Black color for the title */
         }
 
-        /* Style for the changelog entries */
-        .changelog-entry {
-            margin-top: 20px;
-            font-family: 'Rubik Mono One', sans-serif; /* Font declaration */
+        /* Style for the navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #007BFF; /* Blue background color for the navbar */
+            padding: 20px;
         }
 
-        /* Style for the changelog date */
-        .changelog-date {
-            font-weight: bold;
-            color: black; /* Black color for the date */
+        .navbar-left {
+            text-align: left;
+            margin-left: 20px;
         }
 
-        /* Style for the changelog sections */
-        .changelog-section {
-            margin: 20px;
+        .navbar-right {
+            text-align: right;
+            margin-right: 20px;
         }
 
-        /* Style for the blue text (new, issues, fixed) */
-        .blue-text {
-            color: #007BFF; /* Blue color for the text */
+        .navbar-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
         }
+
+        .navbar-link:hover {
+            background-color: white;
+            color: blue;
+        }
+
     </style>
 </head>
 <body>
-    <div class="changelog-title">Changelog</div>
+<nav class="navbar">
+        <div class="navbar-left">
+            <div class="kwiklinks-title">KwikLinks</div>
+        </div>
+        <div class="navbar-right">
+            <a href="https://kwiklinks.github.io" class="navbar-link">Home</a>
+            <a href="https://kwiklinks.github.io/games" class="navbar-link">Games</a>
+            <a href="https://kwiklinks.github.io/apps" class="navbar-link">Apps</a>
+            <a href="https://kwiklinks.github.io/proxies" class="navbar-link">Proxies</a>
+            <a href="https://kwiklinks.github.io/issue-report" class="navbar-link">Issue Report</a>
+            <a href="https://kwiklinks.github.io/chatroom" class="navbar-link">Chatroom</a>
+            <a href="https://kwiklinks.github.io/changelog" class="navbar-link">Changelog</a> 
+        </div>
+    </nav>
 
     <!-- Changelog Section for 9/8/23 -->
     <div class="changelog-section">
@@ -54,6 +124,12 @@
             <div><strong class="blue-text">New:</strong> games added and new footer added along with a-z sorting.</div>
             <div><strong class="blue-text">Issues:</strong> Awesome Pirates crash, tetris download link not play link.</div>
             <div><strong class="blue-text">Fixed:</strong> Awesome pirates.</div>
+        </div>
+        <div class="changelog-entry">
+            <span class="changelog-date">9/10/23:</span>
+            <div><strong class="blue-text">New:</strong> A few games, Proxies, Apps, and a changelog and chatroom.</div>
+            <div><strong class="blue-text">Issues:</strong>None</div>
+            <div><strong class="blue-text">Fixed:</strong> Tetris</div>
         </div>
     </div>
     <!-- End of Changelog Section for 9/8/23 -->
